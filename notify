@@ -1,0 +1,1 @@
+osascript -e 'display notification "hello world!" with title "Greeting" subtitle "More text" sound name "Submarine"'

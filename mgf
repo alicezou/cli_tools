@@ -1,0 +1,9 @@
+cd ~/Downloads
+echo 'Mogrify changing: ' *.HEIC
+count=$(ls -l *.HEIC | wc -l)
+echo 'total file num: ' $count 
+read -p "Press enter to continue, or ctrl + C to abort"
+mogrify -format jpg *.HEIC
+mv *.HEIC ~/.Trash
+
+
